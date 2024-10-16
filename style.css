@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(245, 245, 245);
+}
+
+/* Centraliza a lista de links no centro da tag nav */
+.nav-lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(33, 33, 33);
+    height: 150px;
+}
+
+/* Limita a lista a 50% da largura da tag nav */
+.lista-links {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Estiliza os links que mudam o conteúdo da página  */
+.link {
+    border: 1px solid black;
+    border-radius: 15%;
+    cursor: pointer;
+    padding: 20px;
+    background: rgb(245, 245, 245);
+}
+
+.link:hover {
+    background: rgb(222, 213, 194);
+}
+
+/* Estiliza e organiza a seção que atualiza o conteúdo */
+#content {  
+    height: 100%;
+    width: 60%;
+    margin: 50px auto;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+#content h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0 ;
+}
+
+#content form {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+#content label {
+    font-size: 1.2em;
+    margin: 30px;
+}
+
+#content input {
+    font-size: 1em;
+    padding: 5px;
+}
+
+form div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+textarea {
+    width: 500px;
+    height: 100px;
+}
+
+#content button {
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* Estiliza o botão do link que está ativo */
+.active {
+    background: rgb(229, 163, 21);
+}
+
+@media screen and (max-width: 900px) {
+    .nav-lista {
+        height: 300px;
+    }
+
+    .lista-links {
+        flex-direction: column;
+        width: 200px;
+        text-align: center;
+    }
+}
